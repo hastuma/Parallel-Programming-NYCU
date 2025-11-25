@@ -1,0 +1,62 @@
+
+changwc1218@login01:~/HW2/part2$ run -c 1 -- ./mandelbrot -t 1
+[mandelbrot serial]:		[426.237] ms
+Wrote image file mandelbrot-serial.ppm
+
+--- Thread Timing Breakdown ---
+[Thread 0]:		[426.084] ms
+-------------------------------
+
+changwc1218@login01:~/HW2/part2$ run -c 2 -- ./mandelbrot -t 2 
+[mandelbrot serial]:		[425.816] ms
+Wrote image file mandelbrot-serial.ppm
+
+--- Thread Timing Breakdown ---
+[Thread 1]:		[212.904] ms
+[Thread 0]:		[213.074] ms
+-------------------------------
+changwc1218@login01:~/HW2/part2$ run -c 3 -- ./mandelbrot -t 3
+[mandelbrot serial]:		[386.742] ms
+Wrote image file mandelbrot-serial.ppm
+
+--- Thread Timing Breakdown ---
+[Thread 1]:		[133.799] ms
+[Thread 2]:		[133.872] ms
+[Thread 0]:		[134.080] ms
+-------------------------------
+
+changwc1218@login01:~/HW2/part2$ run -c 4 -- ./mandelbrot -t 4
+[mandelbrot serial]:		[384.843] ms
+Wrote image file mandelbrot-serial.ppm
+
+--- Thread Timing Breakdown ---
+[Thread 1]:		[100.881] ms
+[Thread 2]:		[100.878] ms
+[Thread 0]:		[100.952] ms
+[Thread 3]:		[100.990] ms
+-------------------------------
+changwc1218@login01:~/HW2/part2$ run -c 5 -- ./mandelbrot -t 5 
+[mandelbrot serial]:		[384.907] ms
+Wrote image file mandelbrot-serial.ppm
+
+--- Thread Timing Breakdown ---
+[Thread 4]:		[81.764] ms
+[Thread 3]:		[81.805] ms
+[Thread 0]:		[82.006] ms
+[Thread 2]:		[85.003] ms
+[Thread 1]:		[85.061] ms
+-------------------------------
+
+
+changwc1218@login01:~/HW2/part2$ run -c 6 -- ./mandelbrot -t 6
+[mandelbrot serial]:		[385.263] ms
+Wrote image file mandelbrot-serial.ppm
+
+--- Thread Timing Breakdown ---
+[Thread 2]:		[68.685] ms
+[Thread 1]:		[68.729] ms
+[Thread 4]:		[68.695] ms
+[Thread 5]:		[68.713] ms
+[Thread 3]:		[68.776] ms
+[Thread 0]:		[69.042] ms
+-------------------------------
