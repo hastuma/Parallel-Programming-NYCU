@@ -1,2 +1,3 @@
 # Parallel-Programming-NYCU
-2025 Autumn Parallel-Programming 
+Instructor : Prof. Yi-Ping You
+Semester : 2025 Fall
